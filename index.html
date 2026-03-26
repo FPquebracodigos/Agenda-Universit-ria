@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<section id="tela-cronograma">
     <div class="aulas-segunda">
         <h2>Segunda-Feira</h2>
         
@@ -89,5 +89,22 @@
             <p>Sala: 402 (?)</p>
             <p>Professor: Everlam</p>
         </div>
+        </section>
+        <section id="tela-faltas" style="display: none;">
+    <h2>Controle de Faltas</h2>
+    <div class="materia-falta">
+        <span class="nome-materia">Cálculo I</span>
+        <div class="controles">
+            <button class="btn-menos">-</button>
+            <span class="contador">0</span>
+            <button class="btn-mais">+</button>
+        </div>
+    </div>
+    </section>
+
+<nav class="tab-bar">
+    <button onclick="trocarTela('cronograma')">📅 Aulas</button>
+    <button onclick="trocarTela('faltas')">🚫 Faltas</button>
+</nav>
 </body>
 </html>
